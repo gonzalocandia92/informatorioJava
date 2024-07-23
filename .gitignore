@@ -1,3 +1,6 @@
+#Archivos de idea
 .idea/
-out/
 
+#Archivos de compilación
+out/
+*.class
