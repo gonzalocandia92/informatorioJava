@@ -7,6 +7,17 @@ public class Persona {
     private int edad;
     private int dni;
 
+    // Relaciones 1:1
+    private Auto auto;
+
+    public Auto getAuto() {
+        return auto;
+    }
+
+    public void setAuto(Auto auto) {
+        this.auto = auto;
+    }
+
     // Setters
 
     public void setNombre(String nombre) throws Exception {
@@ -72,6 +83,19 @@ public class Persona {
         }
     }
 
+    public Persona(int dni) throws Exception {
+        if (dni == 12345678) {
+            this.dni = dni;
+            this.nombre = "Fulano";
+            this.apellido = "Mengano";
+            this.edad = 18;
+        } else {
+            throw new Exception("DNI INVÁLIDO");
+        }
+    }
+
+
+    // Validadores
     private boolean validaString(String var) {
         return var != null && !var.isEmpty();
     }

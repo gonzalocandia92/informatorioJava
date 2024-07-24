@@ -1,5 +1,6 @@
 package clases.poo;
 
+import clases.poo.dominio.Auto;
 import clases.poo.dominio.Persona;
 
 public class App {
@@ -12,13 +13,18 @@ public class App {
          3. instanciar el objeto con new NombreDeClase()
          */
 
-        Persona persona = new Persona("Holu", "Camina", 30, 98765432);
 
+        /*
+        Instancia de una persona:
+
+        Persona persona = new Persona("Holu", "Camina", 30, 98765432);
         System.out.print(persona.getApellido()+" ");
         System.out.println(persona.getNombre());
         System.out.println(persona.getEdad());
         System.out.println(persona.getDni());
         System.out.println();
+
+        Modificación:
 
         persona.setApellido("Pérez");
         persona.setNombre("Juan");
@@ -29,7 +35,26 @@ public class App {
         System.out.println(persona.getNombre());
         System.out.println(persona.getEdad());
         System.out.println(persona.getDni());
+        System.out.println();
 
+        Instacia de otra persona desde segundo constructor:
 
+        Persona persona2 = new Persona(12345678);
+        System.out.print(persona2.getApellido()+" ");
+        System.out.println(persona2.getNombre());
+        System.out.println(persona2.getEdad());
+        System.out.println(persona2.getDni());
+        System.out.println();
+        */
+
+        Persona persona = new Persona("Juan", "Perez", 30, 12345678);
+        Auto autito = new Auto("FIAT", 3, "UNO", "BLANCO", "ABC123");
+
+        persona.setAuto(autito);
+
+        System.out.println("Nombre de persona: "+persona.getNombre() +", patente de su auto: "+persona.getAuto().getPlaca());
+
+        // NOTA!!! -> toString sobreescrito
+        System.out.println(autito.toString());
     }
 }
