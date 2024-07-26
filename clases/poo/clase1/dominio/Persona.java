@@ -1,4 +1,4 @@
-package clases.poo.dominio;
+package clases.poo.clase1.dominio;
 
 public class Persona {
     // Atributos

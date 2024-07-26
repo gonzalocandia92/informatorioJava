@@ -1,7 +1,7 @@
-package clases.poo;
+package clases.poo.clase1;
 
-import clases.poo.dominio.Auto;
-import clases.poo.dominio.Persona;
+import clases.poo.clase1.dominio.Auto;
+import clases.poo.clase1.dominio.Persona;
 
 public class App {
     public static void main(String[] args) throws Exception {
