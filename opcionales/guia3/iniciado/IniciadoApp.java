@@ -9,6 +9,7 @@ public class IniciadoApp {
         System.out.println(alumnito);
         System.out.println(alumnito2);
         System.out.println(alumnito3);
+
     }
 
 }
