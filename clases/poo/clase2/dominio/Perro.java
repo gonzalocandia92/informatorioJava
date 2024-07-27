@@ -1,4 +1,4 @@
-package clases.poo.escenario1.dominio;
+package clases.poo.clase2.dominio;
 
 public class Perro extends Animal{
 

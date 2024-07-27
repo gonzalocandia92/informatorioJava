@@ -1,7 +1,7 @@
-package clases.poo.escenario1;
+package clases.poo.clase2;
 
 
-import clases.poo.escenario1.dominio.*;
+import clases.poo.clase2.dominio.*;
 
 import java.util.ArrayList;
 import java.util.List;
