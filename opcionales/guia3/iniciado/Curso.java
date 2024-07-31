@@ -1,20 +1,22 @@
 package opcionales.guia3.iniciado;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Curso {
     private String nombre;
     private String descripcion;
     private Boolean estaHabilitado;
-    private Alumno[] alumnos;
+    private ArrayList<Alumno> alumnos;
 
     // Constructor
-    public Curso(String nombre, String descripcion, Boolean estaHabilitado, Alumno[] alumnos) {
+    public Curso(String nombre, String descripcion, Boolean estaHabilitado, ArrayList<Alumno> alumnos) {
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.estaHabilitado = estaHabilitado;
         this.alumnos = alumnos;
-    }
+
+
 
     // Getters & Setters
 
@@ -42,11 +44,11 @@ public class Curso {
         this.estaHabilitado = estaHabilitado;
     }
 
-    public Alumno[] getAlumnos() {
+    public ArrayList<Alumno> getAlumnos() {
         return alumnos;
     }
 
-    public void setAlumnos(Alumno[] alumnos) {
+    public void setAlumnos(ArrayList<Alumno> alumnos) {
         this.alumnos = alumnos;
     }
 
